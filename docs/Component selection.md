@@ -3,7 +3,7 @@ Component Selection for Weather Monitoring System
 ---
 Part 1: Major Component Selections
 ---
-If you wish to view on [PDF] click. ((https://docs.google.com/document/d/16eBhtJ1a93Trgb88zd__rfECLNrKxZGtmtAWUIEOJiY/edit?tab=t.0#heading=h.ge7hmtquj7cv))
+If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBhtJ1a93Trgb88zd__rfECLNrKxZGtmtAWUIEOJiY/edit?tab=t.0#heading=h.ge7hmtquj7cv).
 
 **Humidity and Temperature sensor component selection**
 
