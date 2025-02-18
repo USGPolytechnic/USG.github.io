@@ -1,4 +1,4 @@
-site_name: EGR314 Team 308
+site_name: EGR314 Team 308; Ethan Peterson Individual Repository
 site_url: https://embedded-systems-design.github.io/template_report
 repo_url: https://github.com/embedded-systems-design/template_report
 edit_uri: edit/main/docs/
@@ -6,10 +6,10 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    primary: blue
-    accent: indigo
+    primary: black
+    accent: white
   font:
-    text: Roboto
+    text: Georgia
   logo: static/logo.svg
   favicon: static/logo.png
 
@@ -59,7 +59,7 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2024 team-name-here"
+copyright: "Copyright &copy; Ethan James Peterson"
 
 extra:
   generator: false
