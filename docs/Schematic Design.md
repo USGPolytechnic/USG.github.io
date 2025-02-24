@@ -1,5 +1,5 @@
 ---
-title: Block Diagram
+title: Schematic Desgin
 ---
 Below is the Humidity and Temperature subsystem created for Team 308, Fresh Start. 
 The system uses the ESP 32 microcontroller and regulates the 9V using an LDO and a switch to start the device up.
