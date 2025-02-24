@@ -21,11 +21,11 @@ Power Source & Voltage Regulator Selection
 I need to ensure that this part receives the correct amperage. Due to the team planning to use 5V instead of 3.3V for this side of the circuit we then have two choices. These choices are to either use 3.3V for the whole board or to use an LDO, since it is a minimal change of 1.7V we hope that this LDO regulator may work in reducing the voltage running through my devices. I will have to construct a circuit that regualates the voltage similar to the voltage regulator lab we finished in class.
 | Solution                        | Pros                                      | Cons                              |
 |---------------------------------|-------------------------------------------|-----------------------------------|
-| **LDO Regulator**               | Simple, Readily available, Low noise      | Higher heat dissipation           |
-| **AMS1117-3.3V (Selected)**     |                                           |                                   |
+| **LDO Regulator**               |                                           |            |
+| **AMS1117-3.3V (Selected)**     |Simple, Readily available, Low noise  |Higher heat dissipation                 |
 |                                 |                                           |                                   |
-| **Switching Regulator**         | High efficiency, Low heat generation      | Bulkier, Requires additional components |
-| **LM2596-3.3V**                 |                                           |                                   |
+| **Switching Regulator**         |                                         |                                       |
+| **LM2596-3.3V**                 |  High efficiency, Low heat generation |  Bulkier, Requires additional components  |
 
 **Rationale:** The AMS1117-3.3V was chosen for its simplicity and ease of implementation in a low-power embedded system.
 
