@@ -79,26 +79,3 @@ Additionally, I will verify that the power rail can supply at least the maximum 
 Test I2C communication with the HDC1010YPAR sensor using ESP-IDF or Arduino.
 Validate power supply stability using a multimeter.
 
----
-Part 3: Power Budget Calculation
----
-
-![Screenshot 2025-02-07 at 10 11 22 PM](https://github.com/user-attachments/assets/78a559b3-23f5-42d1-948e-c32539dee213)
-
-
----
-Part 4: Final Microcontroller Selection & Rationale
----
-The ESP32-S3-WROOM-1-N4 is optimal due to its low power consumption, integrated communication (Wi-Fi/Bluetooth), and robust GPIO options. This selection ensures reliable performance and efficient integration with all sensors and peripherals. It is also highly compatible for the sensor part of the team’s circuit. Due to the I2C communication, it may communicate with the ESP32 and carry the same voltage 3.3V. I would need to use pull-up resistors around some parts of the sensor and ensure correct amperage using these sensors as well.
-
----
-Part 5: Power Source & Voltage Regulator Selection
----
-I need to ensure that this part receives the correct amperage. Due to the team planning to use 5V instead of 3.3V for this side of the circuit, we then have two choices. These choices are to either use 3.3V for the whole board or to use an LDO, since it is a minimal change of 1.7V we hope that this LDO regulator may work in reducing the voltage running through my devices. I will have to construct a circuit that regulates the voltage similar to the voltage regulator lab we finished in class.
-![Screenshot 2025-02-07 at 10 12 32 PM](https://github.com/user-attachments/assets/34829415-c0f8-4861-9685-44d3526598a9)
-
----
-Part 6: Conclusion
----
-This component selection ensures an efficient, low-power, and scalable design for a weather monitoring system using an ESP32-S3-WROOM-1-N4 and HDC1010YPAR temperature and humidity sensor.
-
