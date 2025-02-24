@@ -9,6 +9,7 @@ Power Budget Calculation
 |--------------------------|-------------------|---------------------|------------------|------------|
 | ESP32-S3-WROOM-1-N4      | 3.0V - 3.6V       | 3.3V                | 200mA            | 660mW      |
 | Blue surface mount LED |    2.8V - 3.6V               |       3.3V              |        125mA          |    108mW        |
+| Switch | 0-24 VDC | 0-24 V DC | 50 mA | 165mW|
 | HDC1010YPAR              | 2.7V - 5.5V       | 3.3V                | 20mA             | 66mW       |
 | **Total (maximum) Power Consumption** | -                 | 3.3V                | 240mA            | 726mW      |
 
