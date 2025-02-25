@@ -7,5 +7,4 @@ It is the individual susbsystem, but in the future will need to use the same pow
 The PCB will be made to be compact with surface mount applications being the focus of this design.
 
 
-![Screenshot 2025-02-19 123426](https://github.com/user-attachments/assets/2309ae00-3e88-4293-bcbd-3a2d14829081)
-
+![Screenshot 2025-02-25 073305](https://github.com/user-attachments/assets/d1eeb04c-8329-4f62-9023-ee206429b159)
