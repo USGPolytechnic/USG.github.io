@@ -6,5 +6,5 @@ The system uses the ESP 32 microcontroller and regulates the 9V using an LDO and
 It is the individual susbsystem, but in the future will need to use the same power source to charge other teamates systems.
 The PCB will be made to be compact with surface mount applications being the focus of this design.
 
+![Screenshot 2025-02-25 143244](https://github.com/user-attachments/assets/51143a39-a0a0-4b88-9608-b5a1a48ec9ef)
 
-![Screenshot 2025-02-25 134503](https://github.com/user-attachments/assets/6109f54b-c769-4da7-9b91-d47d847c9bc6)
