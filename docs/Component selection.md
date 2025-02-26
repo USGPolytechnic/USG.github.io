@@ -6,9 +6,7 @@ Part 1: Major Component Selections
 If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBhtJ1a93Trgb88zd__rfECLNrKxZGtmtAWUIEOJiY/edit?tab=t.0#heading=h.ge7hmtquj7cv).
 
 **Humidity and Temperature sensor component selection**
-
-![Screenshot 2025-02-07 at 9 56 07 PM](https://github.com/user-attachments/assets/24f72a32-4cd6-4a67-83b4-0887e238015a)
-
+![Screenshot 2025-02-26 at 11 24 26 AM](https://github.com/user-attachments/assets/394f2a90-8bde-4b19-8c31-9fe0bc293e6e)
 
 **Links:**
 
@@ -21,12 +19,11 @@ If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBh
 
 **Choice:** Option 1, the HDC1010YPAR humidity and temperature sensor
 
-**Rationale:** The HDC1010YPAR was chosen due to its high accuracy, low power consumption, and I2C compatibility with the ESP32 microcontroller. Datasheet: PDF Product page: Link
+**Rationale:** The HDC1010YPAR was chosen due to its high accuracy, low power consumption, and I2C compatibility with the ESP32 microcontroller. Datasheet: [PDF](https://www.ti.com/lit/ds/symlink/hdc1010.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738985127772&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fhdc1010) Product page: [Link](https://www.digikey.com/en/products/detail/texas-instruments/HDC1010YPAR/6205553)
 
 **Microcontroller Selection**
 
-![Screenshot 2025-02-07 at 9 58 06 PM](https://github.com/user-attachments/assets/fba8fff1-b090-41e1-99ca-522dec631633)
-
+![Screenshot 2025-02-26 at 11 23 28 AM](https://github.com/user-attachments/assets/3656cc10-62a0-4da1-a851-d4e9acff289b)
 
 **Links:**
 
