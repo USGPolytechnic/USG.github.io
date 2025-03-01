@@ -7,4 +7,5 @@ It is the individual susbsystem, but in the future will need to use the same pow
 The PCB will be made to be compact with surface mount applications being the focus of this design. I also had to ensure that the surface mount chips were not too small to be used in the design due to the needs to place them down onto the actual pcb.
 
 
-![Screenshot 2025-02-28 190851](https://github.com/user-attachments/assets/b55cf3b1-a4f7-4f9b-b176-f9cf41db5187)
+![Screenshot 2025-02-28 194323](https://github.com/user-attachments/assets/f0e1eccb-152e-43f5-8203-a0a542bfda6f)
+
