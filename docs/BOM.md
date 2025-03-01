@@ -6,7 +6,7 @@ Below is the materials that are desired to be implemented in the sensor portion 
 ---
 BOM spreadsheet: [Link to spreadsheet](https://docs.google.com/spreadsheets/d/1XDYP-75lMF53_pUxz10kB5wWfIxgC6Pn/edit?gid=1046845005#gid=1046845005)
 
-Purchase slip: [Download PDF of Purchase Slip](https://docs.google.com/spreadsheets/d/1FOKIJAz3Uk3exp2fdMsylP9RKTyXmFAm/edit?gid=1557340454#gid=1557340454)
+Purchase slip: [Download PDF of Purchase Slip](https://docs.google.com/spreadsheets/d/1szL4_3IZWjw0e24ai2LgEwiDuFHJ5Ls0/edit?gid=1685898793#gid=1685898793)
 
 You may access the links mentioned in the image if you use the link. This is a large BOM and may be more accessible by viewing the Spreadsheet itself.
 
