@@ -7,7 +7,7 @@ Power Budget Calculation
 
 | Component                | Voltage Range (V) | Typical Voltage (V) | Max Current (mA) | Power (mW) |
 |--------------------------|-------------------|---------------------|------------------|------------|
-| PIC18F47Q10      | 2.3V-5.5V       | 3.3V                | 30mA            | 99mW      |
+| PIC18F47Q10      | 2.3V-5.5V       | 3.3V                | 250mA            | 825mW      |
 | Blue surface mount LED |    2.8V - 3.6V               |       3.3V              |        125mA          |    108mW        |
 | Switch | 0-24 VDC | 0-24 V DC | 50 mA | 165mW|
 | HDC1010YPAR              | 2.7V - 5.5V       | 3.3V                | 20mA             | 66mW       |
