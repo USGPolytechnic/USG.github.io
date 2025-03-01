@@ -13,9 +13,6 @@ Power Budget Calculation
 | HDC1010YPAR              | 2.7V - 5.5V       | 3.3V                | 20mA             | 66mW       |
 | **Total (maximum) Power Consumption** | -                 | 3.3V                | 240mA            | 1164mW      |
 
-Final Microcontroller Selection & Rationale
-
-The PIC18F47Q10 is optimal due to its low power consumption, industrial reliability, and robust GPIO options. This selection ensures reliable performance and efficient integration with all sensors and peripherals. It is also highly compatible for the sensor part of the team’s circuit. Due to the I2C communication, it may communicate with the PIC18F47Q10 and carry the same voltage 3.3V. I would need to use pull-up resistors around some parts of the sensor and ensure correct amperage using these sensors as well.
 
 Power Source & Voltage Regulator Selection
 
@@ -27,10 +24,13 @@ I need to ensure that this part receives the correct amperage. Due to the team p
 |                                 |                                           |                       |
 | Switching Regulator         |                                         |                                       |
 | LM2596-3.3V                 |  High efficiency, Low heat generation |  Bulkier, Requires additional components  |
-| AP63203WU-7                 |  Outputs exactly 3.3V, Surface mount, High efficiency |  Requires precise PCB layout  |
+| AP63203WU-7                 |  Outputs exactly 3.3V, Surface mount, High efficiency | Higher heat dissipation, complex/multiple parts on connection schematic |
 
 Rationale: The AP63203WU-7 was chosen for its precise 3.3V output, surface-mount form factor, and high efficiency, making it ideal for this embedded system.
 
 **Conclusion**
 This component selection ensures an efficient, low-power, and scalable design for a weather monitoring system using a PIC18F47Q10 and HDC1010YPAR temperature and humidity sensor.
+
+No battery is included in this system, it will be a direct connection.
+
 
