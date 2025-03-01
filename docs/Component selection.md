@@ -54,11 +54,11 @@ Package Size: 0603, 0805, 1206, etc.
 
 Colors Available: Red, Green, Blue, Yellow, White
 
-You can find more details and the datasheet [here](https://s3-us-west-2.amazonaws.com/catsy.557/C18571.pdf) 
+You can find more details and the datasheet [here](https://s3-us-west-2.amazonaws.com/catsy.557/C18571.pdf) .
 
 [Product link](https://www.digikey.com/en/product-highlight/d/dialight/microled-surface-mount-leds)
 
-If you wish to view the whole BOM you may visit the link to my BOM spreadsheet: [BOM](https://docs.google.com/spreadsheets/d/1XDYP-75lMF53_pUxz10kB5wWfIxgC6Pn/edit?gid=1046845005#gid=1046845005)
+If you wish to view the whole BOM you may visit the link to my BOM spreadsheet: [BOM](https://docs.google.com/spreadsheets/d/1XDYP-75lMF53_pUxz10kB5wWfIxgC6Pn/edit?gid=1046845005#gid=1046845005).
 
 ---
 Part 2. Microcontroller Pin Allocation
@@ -68,7 +68,7 @@ Part 2. Microcontroller Pin Allocation
 
 ![Screenshot 2025-02-28 230214](https://github.com/user-attachments/assets/91ae99d7-4bb5-48ee-95ca-16be8f68d097)
 
-It may be helpful to go to view the pin layout on schematic if you wish [Layout](https://ejpete10.github.io/test_Datasheet.github.io/Schematic%20Design/)
+It may be helpful to go to view the pin layout on schematic if you wish [Layout](https://ejpete10.github.io/test_Datasheet.github.io/Schematic%20Design/).
 
 I previously selected esp32 but now I switched to PIC, here is the following information regarding the PIC.
 
@@ -141,8 +141,13 @@ Power Budget Calculation
 ---
 I have a total of two major components I will be working with, the microcontroller and the sensor that consume the most power. However I have attempted at including other components that may consume power to run the current through.
 
-
-![Screenshot 2025-02-28 223414](https://github.com/user-attachments/assets/97968700-18be-4505-bd22-55d73a4538d9)
+| Component                | Voltage Range (V) | Typical Voltage (V) | Max Current (mA) | Power (mW) |
+|--------------------------|-------------------|---------------------|------------------|------------|
+| PIC18F47Q10      | 2.3V-5.5V       | 3.3V                | 250mA            | 825mW      |
+| Blue surface mount LED |    2.8V - 3.6V               |       3.3V              |        125mA          |    108mW        |
+| Switch | 0-24 VDC | 0-24 V DC | 50 mA | 165mW|
+| HDC1010YPAR              | 2.7V - 5.5V       | 3.3V                | 20mA             | 66mW       |
+| **Total (maximum) Power Consumption** | -                 | 3.3V                | 240mA            | 1164mW      |
 
 ---
 Section B assigning my components to a power rail.
@@ -180,20 +185,6 @@ When I began my research on trying to find a suitable project for this class, I 
 https://srituhobby.com/how-to-make-a-weather-monitoring-system-with-esp32-board/.
 
 Although this project emphasis the use of the esp32 board, I can still prgram the sensor with the pic and allow a teammate to use a esp32 to then read the information it is sending off, due to this, I wanted to ensure that the information that my board receives will be able to be sent off to the necessary team member, in this case Sanjit who is working on the HMI. This is why I  initially wanted to use the esp32 board but due to fulfilling the requirements of this project, I decided to take one for the team and use the PIC in order for us to use a PIC in this project. I can use I2C to read the data and then UART to send or a GPIO for my teammates to also attach to my system as needed, this PIC still does the job either way. The wifi and bluetooth I will leave to a teammate while ensuring they may access my information of the PIC. I will now also ensure that when I send in my BOM that I order extra PICs in case mine does not work for any reason, the BOM is linked in this document as well if you wish to access it.
-
----
-Power Budget Calculation
----
-
-| Component                | Voltage Range (V) | Typical Voltage (V) | Max Current (mA) | Power (mW) |
-|--------------------------|-------------------|---------------------|------------------|------------|
-| PIC18F47Q10      | 2.3V-5.5V       | 3.3V                | 250mA            | 825mW      |
-| Blue surface mount LED |    2.8V - 3.6V               |       3.3V              |        125mA          |    108mW        |
-| Switch | 0-24 VDC | 0-24 V DC | 50 mA | 165mW|
-| HDC1010YPAR              | 2.7V - 5.5V       | 3.3V                | 20mA             | 66mW       |
-| **Total (maximum) Power Consumption** | -                 | 3.3V                | 240mA            | 1164mW      |
-
-
 
 ---
 Power Source & Voltage Regulator Selection
