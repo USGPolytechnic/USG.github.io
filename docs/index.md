@@ -8,3 +8,4 @@ I will be working on the team's sensor.
 
 [Link to the team website](https://ethan-s-team-314.github.io/Team-Organization-and-Charter/)
 
+In the team website you may go over the Concept Generation, Presentation, youtube video discussing our project (it works as inteded and Team block diagram.
