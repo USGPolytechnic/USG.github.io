@@ -10,7 +10,7 @@ Purchase slip: [Download PDF of Purchase Slip](https://docs.google.com/spreadshe
 
 You may access the links mentioned in the image if you use the link. This is a large BOM and may be more accessible by viewing the Spreadsheet itself.
 
-![Screenshot 2025-02-27 122421](https://github.com/user-attachments/assets/d0d82052-32d8-4ad8-8b1a-4f2eb6e928d1)
 
-![Screenshot 2025-02-27 122452](https://github.com/user-attachments/assets/8123374a-77d1-44db-b744-b59c77081a14)
+![Screenshot 2025-03-11 140303](https://github.com/user-attachments/assets/aa6c3cd3-0055-4f65-b9e7-a43913338ff8)
 
+![Screenshot 2025-03-11 140330](https://github.com/user-attachments/assets/5e1810dc-8328-4a56-acf0-89be520d0e51)
