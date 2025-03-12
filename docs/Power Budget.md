@@ -29,7 +29,7 @@ I need to ensure that this part receives the correct amperage. Due to the team p
 Rationale: The AP63203WU-7 was chosen for its precise 3.3V output, surface-mount form factor, and high efficiency, making it ideal for this embedded system.
 
 **Conclusion**
-This component selection ensures an efficient, low-power, and scalable design for a weather monitoring system using a PIC18F47Q10 and HDC1010YPAR temperature and humidity sensor.
+This component selection ensures an efficient, low-power, and scalable design for a weather monitoring system using a PIC18F47Q10-I/P and HDC2080DMBR temperature and humidity sensor.
 
 No battery is included in this system, it will be a direct connection.
 
