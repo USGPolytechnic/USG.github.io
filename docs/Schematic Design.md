@@ -35,6 +35,21 @@ External Power Source
 
 The power budget has helped to estimate power needs by allowing us to use the correct fuses and to use the appropriate LDO to regulate voltage
 
+**Schematic**
 
 ![Screenshot 2025-03-11 093350](https://github.com/user-attachments/assets/aa48b9cc-4702-4269-acf3-b9b52e117ee5)
 
+
+**PCB** 
+
+![image](https://github.com/user-attachments/assets/e321084d-0bac-43e1-ab30-9426a3a80da0)
+
+**Below is the Atium Export of these PDFs:**
+
+[Schematic_Design_308Ethan.pdf](https://github.com/user-attachments/files/19718026/Schematic_Design_308Ethan.pdf)
+
+
+I had 3/5 checkoffs. This is due to the microchip PIC18F47Q10 that was surface-mounted onto the board was not found by the SNAP. However, after connecting the same headers to a Curiousity nano externally, we were able to read values off of the sensor. It is unknown as of 4/11 why this issue exists.
+Below is the code that was attempting to reach the PIC.
+
+[Subsytem verification.X.zip](https://github.com/user-attachments/files/19718045/Subsytem.verification.X.zip)
