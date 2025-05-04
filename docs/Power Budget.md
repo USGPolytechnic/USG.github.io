@@ -3,16 +3,17 @@ title: Power Budget Overview for Sensor
 ---
 
 
-Power Budget Calculation
-
 | Component                | Voltage Range (V) | Typical Voltage (V) | Max Current (mA) | Power (mW) |
 |--------------------------|-------------------|---------------------|------------------|------------|
-| PIC18F47Q10-I/P      | 1.5-5.5V       | 3.3V                | 250mA            | 825mW      |
-| Blue surface mount LED |    1.87V - 3.0V      |     (3.0)       |  2A (will run <300mA)    |    0.9W |
-| B3U-1000P Switch | 0-24 VDC | 0-24 V DC | 50 mA | 165mW|
-| HDC2080DMBR              | 1.62V - 3.6V       | 3.3V                |       550nA      | 1.815mW     |
+| PIC18F47Q10      | 2.3V-5.5V       | 3.3V                | 250mA            | 825mW      |
+| Blue surface mount LED |    2.8V - 3.6V               |       3.3V              |        125mA          |    108mW        |
+| Switch | 0-24 VDC | 0-24 V DC | 50 mA | 165mW|
+| AHT21            | 2.7V - 5.5V       | 3.3V                | 20mA             | 66mW       |
 | **Total (maximum) Power Consumption** | -                 | 3.3V                | 240mA            | 1164mW      |
 
+**How I used the power budget to estimate power needs and any other conclusions**
+
+I had to ensure that the 9V input from the barrel jack was sufficiently regulated by the APY voltage regulator. The sensor only delivers the correct serial data when it receives the proper voltage on Vin, and the microcontroller functions as intended—without risk of damage—only if it is precisely 3.3V. In practice, when either the sensor or the PIC18F47Q10 was not exactly 3.3V, we encountered problems.
 
 Power Source & Voltage Regulator Selection
 
