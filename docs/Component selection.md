@@ -6,7 +6,8 @@ Part 1: Major Component Selections
 If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBhtJ1a93Trgb88zd__rfECLNrKxZGtmtAWUIEOJiY/edit?tab=t.0#heading=h.ge7hmtquj7cv).
 
 **Humidity and Temperature sensor component selection**
-![Screenshot 2025-02-26 at 11 24 26 AM](https://github.com/user-attachments/assets/394f2a90-8bde-4b19-8c31-9fe0bc293e6e)
+![image](https://github.com/user-attachments/assets/c80c5c43-d310-479b-98bc-2712b3758539)
+
 
 **Links:**
 
@@ -16,10 +17,15 @@ If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBh
 
 [HDC1010YPAR](https://www.ti.com/lit/ds/symlink/hdc1010.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738985127772&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fhdc1010)
 
+[AHT21](https://www.digikey.com/en/products/detail/universal-solder-electronics-ltd/26585/26606395?s=N4IgTCBcDaIIIAkAqYCMIC6BfIA)
 
-**Choice:** Option 1, the HDC1010YPAR humidity and temperature sensor
 
-**Rationale:** The HDC1010YPAR was chosen due to its high accuracy, low power consumption, and I2C compatibility with the ESP32 microcontroller. Datasheet: [PDF](https://www.ti.com/lit/ds/symlink/hdc1010.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738985127772&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fhdc1010) Product page: [Link](https://www.digikey.com/en/products/detail/texas-instruments/HDC1010YPAR/6205553)
+**Choice:** Option 4, the AHT21 humidity and temperature sensor
+
+**Rationale:** The HDC1010YPAR was initially chosen due to its high accuracy, low power consumption, and I2C compatibility with the ESP32 microcontroller. However after testing the sensor initially worked as intended but after introducing 5V to the sensor it fried, causing issues with the initial desingn, this also fried the PIC. Due to this we needed a strong sensor that was durable for hands on programming and debugging, this is when we came across the AHT21
+
+Datasheet: [PDF](https://pdf.directindustry.com/pdf/aosong-electronics-co-ltd/data-sheet-aht21/121567-1002931.html) 
+Product page: [Link](https://www.digikey.com/en/products/detail/universal-solder-electronics-ltd/26585/26606395?s=N4IgTCBcDaIIIAkAqYCMIC6BfIA)
 
 **Microcontroller Selection**
 
@@ -36,6 +42,17 @@ If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBh
 **Choice:** Option 2 PIC18F47Q10 microcontroller
 
 **Rationale:** The PIC18F47Q10 was chosen for its reliability, simplicity, and cost-effectiveness in an industrial setting. You may view how the 3.3V consumption will have to be considered. This will use an LDO. 
+---
+Summary of Major Components Used
+---
+| Component                                     | How it interacts with this project |
+|---------------------------------------------|-------------------------------------|
+|AHT21 Sensor| I2C communication data regarding current temperature and humidity for team system|
+|PIC18F47Q10| 3.3V input with 47 pins utilizing clock and data lines in microcontroller from sensor|
+| AP63203WU-7| Voltage Regualtor meant to take the 9V and make it 3.3V using decription of layout in datasheet|
+
+This concludes majpr components for a full list of compoents that were sused in the PCB vitit: [Full List](https://docs.google.com/spreadsheets/d/1XDYP-75lMF53_pUxz10kB5wWfIxgC6Pn/edit?gid=1046845005#gid=1046845005)
+
 
 That is all for the devices that communicate. I also chose to add a debugging LED that goes from my RE3 pin on my PIC to the Snap programmer header pins, here are the details on this.
 Part Name - Blue Micro LED® SMD LED
@@ -58,7 +75,15 @@ You can find more details and the datasheet [here](https://s3-us-west-2.amazonaw
 
 [Product link](https://www.digikey.com/en/product-highlight/d/dialight/microled-surface-mount-leds)
 
-If you wish to view the whole BOM you may visit the link to my BOM spreadsheet: [BOM](https://docs.google.com/spreadsheets/d/1XDYP-75lMF53_pUxz10kB5wWfIxgC6Pn/edit?gid=1046845005#gid=1046845005).
+
+---
+How do these components contained in the BOM and the Major components mentioned meet product requirements
+---
+In my decision-making process, I had to once again consider what my team needed and the requirements for this project. Initially, I was confused because I thought I had to use the PIC microcontroller, even though I really wanted to use the ESP. This led to a back-and-forth decision—ESP → PIC → ESP → PIC—which made the debugging process chaotic due to the many iterations we went through before finally finding a functional solution.
+
+The final layout consists of the following components: a 9V intake from the barrel jack, which is regulated by the APY, passing through an SS14 diode to the sensor. The sensor then connects directly to the microcontroller, which emits data via the TX line from the RX line, based on coding from the SNAP. This specific layout fulfilled the class requirements and met my project’s needs.
+
+Despite numerous debugging issues caused by human error in design and soldering, the project was ultimately successful. The carefully chosen components matched the requirements, were supplied with the correct voltage, and had the necessary connections. Because of this, we were able to overcome the challenges and finalize a working system.
 
 ---
 Part 2. Microcontroller Pin Allocation
@@ -90,6 +115,9 @@ I previously selected esp32 but now I switched to PIC, here is the following inf
 | Works with MPLabX?                          | Yes |
 | Works with Microchip Code Configurator?     | Yes |
 
+---
+Pins Used for final desing
+---
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 |--------|------------|--------|------------------------------|
@@ -101,7 +129,8 @@ I previously selected esp32 but now I switched to PIC, here is the following inf
 | PWM    | 2          | 0      | * |
 | ICSP   | 1          | 1      | RE3 |
 
-**Comment:** This microcontroller meets my needs and allows me to connect the necessary pins for my components that I will be using to ensure I can read humidity and temperature and send them to my teammates. For further information, you may view Image A below that details what the microcontroller looks like and what pins are being used in my subsystem. As you can see, I had additional pins I used as headers, I did not detail them in the needed section as they are not necessarily needed but are useful if I find out later on in the creation of my system that a teammate would like to access my microcontroller or if something goes wrong in wiring. I like to attempt to be as prepared as possible for this difficult task.
+**Comment Regarding Feedback:** This microcontroller meets my needs and allows me to connect the necessary pins for my components that I will be using to ensure I can read humidity and temperature and send them to my teammates. For further information, you may view Image A below that details what the microcontroller looks like and what pins are being used in my subsystem. As you can see, I had additional pins I used as headers, I did not detail them in the needed section as they are not necessarily needed but are useful if I find out later on in the creation of my system that a teammate would like to access my microcontroller or if something goes wrong in wiring. I like to attempt to be as prepared as possible for this difficult task.
+
 
 ![Screenshot 2025-02-28 221751](https://github.com/user-attachments/assets/7fb9a71e-cc66-4403-8724-e45bcf49031a)
 
