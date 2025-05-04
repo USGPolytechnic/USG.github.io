@@ -6,6 +6,7 @@ Part 1: Major Component Selections
 If you wish to view on PDF click [here](https://docs.google.com/document/d/16eBhtJ1a93Trgb88zd__rfECLNrKxZGtmtAWUIEOJiY/edit?tab=t.0#heading=h.ge7hmtquj7cv).
 
 **Humidity and Temperature sensor component selection**
+
 ![image](https://github.com/user-attachments/assets/c80c5c43-d310-479b-98bc-2712b3758539)
 
 
