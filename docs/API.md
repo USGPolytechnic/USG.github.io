@@ -51,9 +51,9 @@ As seen below the teams communication sequence diagram, we may view the teams pr
 
   **RECEIVE - Incoming Request: Temperature and Humidity** - This is when a user initiates the system, asks temperature, humidity, or water speed or flow rate through the device. 
 
-  **ACT ON - Process Information: Temperature and Humidity** - This is when the sensors go through their code to seek what they are capable of sensing. In my case the HDC2080 seeks out temperature and humidity through I2C data and clock capabilities. 
+  **ACT ON - Process Information: Temperature and Humidity** - This is when the sensors go through their code to seek what they are capable of sensing. In my case the AHT21 seeks out temperature and humidity through I2C data and clock capabilities. 
   
-  **SEND -Transmit Information: Temperature and Humidity** - The final respocibility of the HDC2080 is to communicate the end process with the HMI so that it may be inserted into their code for processing and to be displayed to the user. 
+  **SEND -Transmit Information: Temperature and Humidity** - The final respocibility of the AHT21 is to communicate the end process with the HMI so that it may be inserted into their code for processing and to be displayed to the user. 
 
 
 
