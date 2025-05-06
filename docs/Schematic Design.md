@@ -47,15 +47,19 @@ The power budget has helped to estimate power needs by allowing us to use the co
 ---
 
 **Internet**
+
 ![image](https://github.com/user-attachments/assets/d8cc0b0d-5415-4143-afde-b6ceb6444252)
 
 **Sensor**
+
 ![image](https://github.com/user-attachments/assets/b25837d6-d17e-4dfa-b05a-9b1cf3508820)
 
 **HMI**
+
 ![image](https://github.com/user-attachments/assets/4483b70d-a024-4e62-96be-0379ea7bd6ea)
 
 **Motor Driver**
+
 ![image](https://github.com/user-attachments/assets/1fa9834f-f6fb-4cda-a1a4-d665376c2281)
 
 ---
