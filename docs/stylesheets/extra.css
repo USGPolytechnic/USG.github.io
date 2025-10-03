@@ -11,10 +11,5 @@ blockquote{
     }
 }
 
-/* Hide the GitHub logo and repository link in the Material for MkDocs navigation bar and menu */
-.md-header__source,
-.md-source {
-    display: none !important;
-}
 
 /* You can add your own custom CSS below this line */
