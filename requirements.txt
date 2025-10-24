@@ -1,4 +1,2 @@
 mkdocs==1.5.3
-mkdocs-material==9.5.18
-mkdocs-rss-plugin==1.17.4
 # Add any other pinned extensions you need
