@@ -20,7 +20,7 @@ jobs:
       - name: Build
         uses: Tiryoh/actions-mkdocs@v0
         with:
-          mkdocs_version: '1.5.3'      # pinned to match mkdocs-material~=1.5.3
+          mkdocs_version: '1.5.3'      # match mkdocs-material~=1.5.3
           requirements: 'requirements.txt'
           configfile: 'mkdocs.yml'
 
