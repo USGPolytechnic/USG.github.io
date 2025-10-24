@@ -1,2 +1,4 @@
 mkdocs==1.5.3
+mkdocs-material
+mkdocs-glightbox
 # Add any other pinned extensions you need
